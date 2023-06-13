@@ -31,8 +31,14 @@ VALUES ('John', 'Doe', 'Sales', '2022-01-01', 5000.00, 'johndoe@example.com', '1
 SELECT * FROM employee;
 
 
-/*Second largest salary*/
+/*TASK3 Second largest salary*/
 
 SELECT MAX(salary) as second_largest FROM employee
 WHERE salary<(
 SELECT MAX(salary) FROM employee)
+
+/*TASK4 List numbr of employees in each department*/
+
+SELECT COUNT(employee_id) AS number_of_employees,department FROM employee
+ GROUP BY department;
+
