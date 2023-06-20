@@ -42,3 +42,7 @@ SELECT MAX(salary) FROM employee)
 SELECT COUNT(employee_id) AS number_of_employees,department FROM employee
  GROUP BY department;
 
+
+
+ UPDATE employee SET salary=9000
+ WHERE first_name='Olivia';

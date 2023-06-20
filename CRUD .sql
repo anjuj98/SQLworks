@@ -45,11 +45,12 @@ BEGIN
 END
 
 
-EXEC CreateBank 'State Bank Of India', 'Kochi', '1234567890', 1000.00
+EXEC CreateBank 'icici', 'kaloor', '8974567890', 8000.00
 
-EXEC GetBank 2
+EXEC GetBank 3
 
 EXEC UpdateBank 1,'Federal Bank','Thrissur','9876543210',2000.00
 
 EXEC DeleteBank 1 
 
+select * from BANK;
